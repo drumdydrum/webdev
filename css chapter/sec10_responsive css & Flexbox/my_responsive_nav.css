@@ -1,0 +1,46 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    font-size: 1.5em
+
+}
+
+/* h1 COLORS */
+
+h1 {
+    font-size: 4em;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 479px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+
+/* h1 FONT SIZES */
+
+h1 {
+    font-size: 4em;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 479px) {
+    h1 {
+        font-size: 2em;
+    }
+}
+

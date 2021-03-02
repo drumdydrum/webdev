@@ -1,0 +1,61 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049;
+
+    /*  mod104: Flex-Direction  */
+    display: flex;
+    /* flex-direction: row / row-reverse / column / column-reverse */
+    flex-direction: row;
+    /* flex-direction: column; */
+
+    /*  mod105: Justify-Content  (formats along main axis) */
+    /* justify-content: start / flex-end / center / space-between / space-around / space-evenly / safe center (overflow alignment) / unsafe center */
+    justify-content: center;
+
+    /*  mod106: Flex-Wrap  */
+    /* flex-wrap: nowrap / wrap / wrap-reverse */
+    /* flex-wrap: wrap; */
+
+    /*  mod107: Align-Items - controls the alignment of items on the Cross Axis */
+    /* align-items: flex-start / flex-end / center / stretch / [first/last] baseline (align elements based on the baseline of text) */
+    /* align-items: start; */
+
+    /*  mod108: Align-Content - sets the distribution of space between lines of wrapped items. Only works on wrapped items (flex-wrap: wrap / wrap-reverse) */
+    /* align-content: flex-start / flex-end / center / baseline / space-between / space-around / space-evenly / stretch */
+    /* align-content: /* space-between; seems to override align-items and align-self */
+}
+
+/* #container div:nth-of-type(2) { */
+    /* mod108: Align-Self - overrides a flex item's align-items value. It is meant to be used on individual elements within the Flexbox / flex container */
+    /* align-self: same values as align-items */
+    /* align-self: flex-end; /* cannot override align-content apparently */
+
+    /*  mod109  */
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+    /* flex: 2 2 200px */
+/* } */
+
+/*  mod104: Flex-Direction  */
+#container div {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+
+    /*  mod109: Flex-Basis, Flex-Grow, Flex-Shrink  */
+    /* flex-basis: 400px; /* Overrides width. This formats along the main axis */
+    /* flex-basis: 400px; */
+
+    /*  mod110: Flex Shorthand  */
+    /* flex: 2 (flex grow), flex: 10em / 30% (flex basis), flex: 1 30px (flex grow | flex basis), flex: 2 2 (flex grow | flex basis), flex: 2 2 10% (flex grow | flex shrink | flex basis) */
+    /* flex: 1 */
+}
